@@ -10,6 +10,9 @@
 		2EC372B51DD62EA5001625E5 /* RGB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC372AB1DD62EA5001625E5 /* RGB.framework */; };
 		2EC372BA1DD62EA5001625E5 /* RGBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC372B91DD62EA5001625E5 /* RGBTests.swift */; };
 		2EC372BC1DD62EA5001625E5 /* RGB.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EC372AE1DD62EA5001625E5 /* RGB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EC372DE1DD64375001625E5 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC372DD1DD64375001625E5 /* Curry.framework */; };
+		2EC372E01DD643AD001625E5 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC372DF1DD643AD001625E5 /* Nimble.framework */; };
+		2EC372E21DD643B3001625E5 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC372E11DD643B3001625E5 /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,10 @@
 		2EC372B41DD62EA5001625E5 /* RGBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RGBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC372B91DD62EA5001625E5 /* RGBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBTests.swift; sourceTree = "<group>"; };
 		2EC372BB1DD62EA5001625E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EC372DB1DD6435A001625E5 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = "Carthage/Checkouts/Curry/build/Debug-iphoneos/Curry.framework"; sourceTree = "<group>"; };
+		2EC372DD1DD64375001625E5 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = "Carthage/Checkouts/Curry/build/Debug-iphoneos/Curry.framework"; sourceTree = "<group>"; };
+		2EC372DF1DD643AD001625E5 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
+		2EC372E11DD643B3001625E5 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EC372DE1DD64375001625E5 /* Curry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EC372E21DD643B3001625E5 /* Quick.framework in Frameworks */,
+				2EC372E01DD643AD001625E5 /* Nimble.framework in Frameworks */,
 				2EC372B51DD62EA5001625E5 /* RGB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +66,7 @@
 				2EC372AD1DD62EA5001625E5 /* RGB */,
 				2EC372B81DD62EA5001625E5 /* RGBTests */,
 				2EC372AC1DD62EA5001625E5 /* Products */,
+				2EC372DA1DD6435A001625E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +95,17 @@
 				2EC372BB1DD62EA5001625E5 /* Info.plist */,
 			);
 			path = RGBTests;
+			sourceTree = "<group>";
+		};
+		2EC372DA1DD6435A001625E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EC372E11DD643B3001625E5 /* Quick.framework */,
+				2EC372DF1DD643AD001625E5 /* Nimble.framework */,
+				2EC372DD1DD64375001625E5 /* Curry.framework */,
+				2EC372DB1DD6435A001625E5 /* Curry.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +350,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Curry/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = RGB/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -347,6 +373,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Curry/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = RGB/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -361,6 +391,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = M5J7K9HVYB;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = RGBTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.cyper.RGBTests;
@@ -373,6 +404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = M5J7K9HVYB;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = RGBTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.cyper.RGBTests;
@@ -400,6 +432,7 @@
 				2EC372C11DD62EA5001625E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EC372C21DD62EA5001625E5 /* Build configuration list for PBXNativeTarget "RGBTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +441,7 @@
 				2EC372C41DD62EA5001625E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
