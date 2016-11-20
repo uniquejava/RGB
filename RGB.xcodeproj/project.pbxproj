@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E6C003E1DE186DB0008C9F0 /* RGBUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C003D1DE186DB0008C9F0 /* RGBUIColor.swift */; };
 		2EC372B51DD62EA5001625E5 /* RGB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC372AB1DD62EA5001625E5 /* RGB.framework */; };
 		2EC372BA1DD62EA5001625E5 /* RGBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC372B91DD62EA5001625E5 /* RGBTests.swift */; };
 		2EC372BC1DD62EA5001625E5 /* RGB.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EC372AE1DD62EA5001625E5 /* RGB.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E6C003D1DE186DB0008C9F0 /* RGBUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBUIColor.swift; sourceTree = "<group>"; };
 		2EC372AB1DD62EA5001625E5 /* RGB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RGB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC372AE1DD62EA5001625E5 /* RGB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGB.h; sourceTree = "<group>"; };
 		2EC372AF1DD62EA5001625E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			children = (
 				2EC372AE1DD62EA5001625E5 /* RGB.h */,
 				2EC372AF1DD62EA5001625E5 /* Info.plist */,
+				2E6C003D1DE186DB0008C9F0 /* RGBUIColor.swift */,
 			);
 			path = RGB;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 					2EC372AA1DD62EA5001625E5 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = M5J7K9HVYB;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					2EC372B31DD62EA5001625E5 = {
@@ -220,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E6C003E1DE186DB0008C9F0 /* RGBUIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +349,7 @@
 		2EC372C01DD62EA5001625E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = M5J7K9HVYB;
@@ -360,6 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.cyper.RGB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -367,6 +374,7 @@
 		2EC372C11DD62EA5001625E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = M5J7K9HVYB;
@@ -390,6 +398,7 @@
 		2EC372C31DD62EA5001625E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = M5J7K9HVYB;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = RGBTests/Info.plist;
@@ -403,6 +412,7 @@
 		2EC372C41DD62EA5001625E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = M5J7K9HVYB;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = RGBTests/Info.plist;
